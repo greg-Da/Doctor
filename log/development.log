@@ -2637,3 +2637,971 @@ Migrating to AddIndexToJoinDoctorToSpeciality (20190131141344)
   [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
   [1m[36mJoinDoctorToSpeciality Load (0.1ms)[0m  [1m[34mSELECT  "join_doctor_to_specialities".* FROM "join_doctor_to_specialities" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mJoinDoctorToSpeciality Load (0.2ms)[0m  [1m[34mSELECT  "join_doctor_to_specialities".* FROM "join_doctor_to_specialities" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCity Create (3.6ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tbilisi"], ["created_at", "2019-01-31 21:38:36.865322"], ["updated_at", "2019-01-31 21:38:36.865322"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Port-of-Spain"], ["created_at", "2019-01-31 21:38:36.880053"], ["updated_at", "2019-01-31 21:38:36.880053"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSpeciality Create (0.3ms)[0m  [1m[32mINSERT INTO "specialities" ("speciality", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["speciality", "Dynamic Retail Agent"], ["created_at", "2019-01-31 21:38:36.900874"], ["updated_at", "2019-01-31 21:38:36.900874"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSpeciality Create (0.2ms)[0m  [1m[32mINSERT INTO "specialities" ("speciality", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["speciality", "Manufacturing Architect"], ["created_at", "2019-01-31 21:38:36.908030"], ["updated_at", "2019-01-31 21:38:36.908030"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSpeciality Create (0.4ms)[0m  [1m[32mINSERT INTO "specialities" ("speciality", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["speciality", "Corporate Mining Administrator"], ["created_at", "2019-01-31 21:38:36.918047"], ["updated_at", "2019-01-31 21:38:36.918047"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mSpeciality Create (0.4ms)[0m  [1m[32mINSERT INTO "specialities" ("speciality", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["speciality", "Product Farming Orchestrator"], ["created_at", "2019-01-31 21:38:36.930330"], ["updated_at", "2019-01-31 21:38:36.930330"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.2ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tamekia"], ["last_name", "Braun"], ["postal_code", "B000CR7COI"], ["created_at", "2019-01-31 21:38:36.976356"], ["updated_at", "2019-01-31 21:38:36.976356"], ["city_id", 4]]
+  ↳ db/seeds.rb:17
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Stefany"], ["last_name", "Gottlieb"], ["created_at", "2019-01-31 21:38:36.989323"], ["updated_at", "2019-01-31 21:38:36.989323"], ["city_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.1ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Benjamin"], ["last_name", "Kling"], ["postal_code", "B000JS9C70"], ["created_at", "2019-01-31 21:38:36.996458"], ["updated_at", "2019-01-31 21:38:36.996458"], ["city_id", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Jacinto"], ["last_name", "Hirthe"], ["created_at", "2019-01-31 21:38:37.006820"], ["updated_at", "2019-01-31 21:38:37.006820"], ["city_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.1ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Elvina"], ["last_name", "Blanda"], ["postal_code", "B000IT4T9Q"], ["created_at", "2019-01-31 21:38:37.017769"], ["updated_at", "2019-01-31 21:38:37.017769"], ["city_id", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "August"], ["last_name", "Gutmann"], ["created_at", "2019-01-31 21:38:37.025143"], ["updated_at", "2019-01-31 21:38:37.025143"], ["city_id", 4]]
+  ↳ db/seeds.rb:18
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.1ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jonathon"], ["last_name", "Turcotte"], ["postal_code", "B000BPZFNQ"], ["created_at", "2019-01-31 21:38:37.031469"], ["updated_at", "2019-01-31 21:38:37.031469"], ["city_id", 4]]
+  ↳ db/seeds.rb:17
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.4ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Marcos"], ["last_name", "Crona"], ["created_at", "2019-01-31 21:38:37.044741"], ["updated_at", "2019-01-31 21:38:37.044741"], ["city_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.4ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jayme"], ["last_name", "Ledner"], ["postal_code", "B000BJ20Y4"], ["created_at", "2019-01-31 21:38:37.060642"], ["updated_at", "2019-01-31 21:38:37.060642"], ["city_id", 3]]
+  ↳ db/seeds.rb:17
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.4ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Haywood"], ["last_name", "Oberbrunner"], ["created_at", "2019-01-31 21:38:37.073986"], ["updated_at", "2019-01-31 21:38:37.073986"], ["city_id", 4]]
+  ↳ db/seeds.rb:18
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.4ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Duane"], ["last_name", "Murphy"], ["postal_code", "B0000DYX4V"], ["created_at", "2019-01-31 21:38:37.084731"], ["updated_at", "2019-01-31 21:38:37.084731"], ["city_id", 2]]
+  ↳ db/seeds.rb:17
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.4ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Sheba"], ["last_name", "Harber"], ["created_at", "2019-01-31 21:38:37.095716"], ["updated_at", "2019-01-31 21:38:37.095716"], ["city_id", 4]]
+  ↳ db/seeds.rb:18
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.3ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Marian"], ["last_name", "Halvorson"], ["postal_code", "B000I00RTG"], ["created_at", "2019-01-31 21:38:37.110239"], ["updated_at", "2019-01-31 21:38:37.110239"], ["city_id", 3]]
+  ↳ db/seeds.rb:17
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.3ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Oleta"], ["last_name", "Bauch"], ["created_at", "2019-01-31 21:38:37.124845"], ["updated_at", "2019-01-31 21:38:37.124845"], ["city_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.3ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Catarina"], ["last_name", "Brekke"], ["postal_code", "B0002F40AY"], ["created_at", "2019-01-31 21:38:37.136356"], ["updated_at", "2019-01-31 21:38:37.136356"], ["city_id", 4]]
+  ↳ db/seeds.rb:17
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.3ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Arnold"], ["last_name", "Runolfsdottir"], ["created_at", "2019-01-31 21:38:37.146794"], ["updated_at", "2019-01-31 21:38:37.146794"], ["city_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.3ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shawn"], ["last_name", "Toy"], ["postal_code", "B000BNLKWS"], ["created_at", "2019-01-31 21:38:37.160544"], ["updated_at", "2019-01-31 21:38:37.160544"], ["city_id", 4]]
+  ↳ db/seeds.rb:17
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.4ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Jarrod"], ["last_name", "Balistreri"], ["created_at", "2019-01-31 21:38:37.175519"], ["updated_at", "2019-01-31 21:38:37.175519"], ["city_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mDoctor Create (0.4ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "postal_code", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shawanna"], ["last_name", "Brown"], ["postal_code", "B0002STO02"], ["created_at", "2019-01-31 21:38:37.189812"], ["updated_at", "2019-01-31 21:38:37.189812"], ["city_id", 1]]
+  ↳ db/seeds.rb:17
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mPatient Create (0.3ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at", "city_id") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Omer"], ["last_name", "Walter"], ["created_at", "2019-01-31 21:38:37.200163"], ["updated_at", "2019-01-31 21:38:37.200163"], ["city_id", 3]]
+  ↳ db/seeds.rb:18
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mDoctor Load (0.5ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-02-15 00:00:00"], ["created_at", "2019-01-31 21:38:37.230444"], ["updated_at", "2019-01-31 21:38:37.230444"], ["doctor_id", 21], ["patient_id", 11], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2020-01-06 00:00:00"], ["created_at", "2019-01-31 21:38:37.243677"], ["updated_at", "2019-01-31 21:38:37.243677"], ["doctor_id", 12], ["patient_id", 8], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-10-11 00:00:00"], ["created_at", "2019-01-31 21:38:37.255181"], ["updated_at", "2019-01-31 21:38:37.255181"], ["doctor_id", 19], ["patient_id", 17], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-05 00:00:00"], ["created_at", "2019-01-31 21:38:37.263332"], ["updated_at", "2019-01-31 21:38:37.263332"], ["doctor_id", 17], ["patient_id", 23], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-05-31 00:00:00"], ["created_at", "2019-01-31 21:38:37.274799"], ["updated_at", "2019-01-31 21:38:37.274799"], ["doctor_id", 23], ["patient_id", 25], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-10 00:00:00"], ["created_at", "2019-01-31 21:38:37.295254"], ["updated_at", "2019-01-31 21:38:37.295254"], ["doctor_id", 19], ["patient_id", 29], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-10-02 00:00:00"], ["created_at", "2019-01-31 21:38:37.313488"], ["updated_at", "2019-01-31 21:38:37.313488"], ["doctor_id", 7], ["patient_id", 5], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.3ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-06 00:00:00"], ["created_at", "2019-01-31 21:38:37.325170"], ["updated_at", "2019-01-31 21:38:37.325170"], ["doctor_id", 13], ["patient_id", 29], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-18 00:00:00"], ["created_at", "2019-01-31 21:38:37.345649"], ["updated_at", "2019-01-31 21:38:37.345649"], ["doctor_id", 2], ["patient_id", 3], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-06-10 00:00:00"], ["created_at", "2019-01-31 21:38:37.355806"], ["updated_at", "2019-01-31 21:38:37.355806"], ["doctor_id", 10], ["patient_id", 19], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-04-07 00:00:00"], ["created_at", "2019-01-31 21:38:37.363557"], ["updated_at", "2019-01-31 21:38:37.363557"], ["doctor_id", 13], ["patient_id", 21], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-11-12 00:00:00"], ["created_at", "2019-01-31 21:38:37.375961"], ["updated_at", "2019-01-31 21:38:37.375961"], ["doctor_id", 10], ["patient_id", 27], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-10-15 00:00:00"], ["created_at", "2019-01-31 21:38:37.397150"], ["updated_at", "2019-01-31 21:38:37.397150"], ["doctor_id", 29], ["patient_id", 16], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.5ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-08-10 00:00:00"], ["created_at", "2019-01-31 21:38:37.417406"], ["updated_at", "2019-01-31 21:38:37.417406"], ["doctor_id", 24], ["patient_id", 3], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.5ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-03-01 00:00:00"], ["created_at", "2019-01-31 21:38:37.434895"], ["updated_at", "2019-01-31 21:38:37.434895"], ["doctor_id", 27], ["patient_id", 16], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-09-23 00:00:00"], ["created_at", "2019-01-31 21:38:37.454457"], ["updated_at", "2019-01-31 21:38:37.454457"], ["doctor_id", 19], ["patient_id", 21], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-07-02 00:00:00"], ["created_at", "2019-01-31 21:38:37.468429"], ["updated_at", "2019-01-31 21:38:37.468429"], ["doctor_id", 4], ["patient_id", 16], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.5ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-02-20 00:00:00"], ["created_at", "2019-01-31 21:38:37.484604"], ["updated_at", "2019-01-31 21:38:37.484604"], ["doctor_id", 22], ["patient_id", 13], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-03-23 00:00:00"], ["created_at", "2019-01-31 21:38:37.500084"], ["updated_at", "2019-01-31 21:38:37.500084"], ["doctor_id", 18], ["patient_id", 27], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.3ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-01-05 00:00:00"], ["created_at", "2019-01-31 21:38:37.520240"], ["updated_at", "2019-01-31 21:38:37.520240"], ["doctor_id", 6], ["patient_id", 15], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-02-05 00:00:00"], ["created_at", "2019-01-31 21:38:37.534803"], ["updated_at", "2019-01-31 21:38:37.534803"], ["doctor_id", 31], ["patient_id", 22], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.3ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-12 00:00:00"], ["created_at", "2019-01-31 21:38:37.548028"], ["updated_at", "2019-01-31 21:38:37.548028"], ["doctor_id", 29], ["patient_id", 14], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-07-19 00:00:00"], ["created_at", "2019-01-31 21:38:37.567770"], ["updated_at", "2019-01-31 21:38:37.567770"], ["doctor_id", 12], ["patient_id", 10], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-03-08 00:00:00"], ["created_at", "2019-01-31 21:38:37.587577"], ["updated_at", "2019-01-31 21:38:37.587577"], ["doctor_id", 7], ["patient_id", 26], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-04-19 00:00:00"], ["created_at", "2019-01-31 21:38:37.598590"], ["updated_at", "2019-01-31 21:38:37.598590"], ["doctor_id", 22], ["patient_id", 4], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-10-02 00:00:00"], ["created_at", "2019-01-31 21:38:37.611468"], ["updated_at", "2019-01-31 21:38:37.611468"], ["doctor_id", 8], ["patient_id", 25], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-01 00:00:00"], ["created_at", "2019-01-31 21:38:37.631093"], ["updated_at", "2019-01-31 21:38:37.631093"], ["doctor_id", 21], ["patient_id", 1], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.3ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-14 00:00:00"], ["created_at", "2019-01-31 21:38:37.645490"], ["updated_at", "2019-01-31 21:38:37.645490"], ["doctor_id", 8], ["patient_id", 2], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-06-22 00:00:00"], ["created_at", "2019-01-31 21:38:37.656808"], ["updated_at", "2019-01-31 21:38:37.656808"], ["doctor_id", 8], ["patient_id", 1], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-08-31 00:00:00"], ["created_at", "2019-01-31 21:38:37.670680"], ["updated_at", "2019-01-31 21:38:37.670680"], ["doctor_id", 19], ["patient_id", 22], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-05-18 00:00:00"], ["created_at", "2019-01-31 21:38:37.690259"], ["updated_at", "2019-01-31 21:38:37.690259"], ["doctor_id", 26], ["patient_id", 11], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-06-10 00:00:00"], ["created_at", "2019-01-31 21:38:37.703775"], ["updated_at", "2019-01-31 21:38:37.703775"], ["doctor_id", 8], ["patient_id", 17], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-09-13 00:00:00"], ["created_at", "2019-01-31 21:38:37.716771"], ["updated_at", "2019-01-31 21:38:37.716771"], ["doctor_id", 1], ["patient_id", 22], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.0ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2018-03-12 00:00:00"], ["created_at", "2019-01-31 21:38:37.730680"], ["updated_at", "2019-01-31 21:38:37.730680"], ["doctor_id", 22], ["patient_id", 25], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.4ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-05-15 00:00:00"], ["created_at", "2019-01-31 21:38:37.747687"], ["updated_at", "2019-01-31 21:38:37.747687"], ["doctor_id", 10], ["patient_id", 26], ["city_id", 4]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.3ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-04-24 00:00:00"], ["created_at", "2019-01-31 21:38:37.761346"], ["updated_at", "2019-01-31 21:38:37.761346"], ["doctor_id", 23], ["patient_id", 15], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-02-16 00:00:00"], ["created_at", "2019-01-31 21:38:37.777091"], ["updated_at", "2019-01-31 21:38:37.777091"], ["doctor_id", 27], ["patient_id", 14], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-15 00:00:00"], ["created_at", "2019-01-31 21:38:37.794077"], ["updated_at", "2019-01-31 21:38:37.794077"], ["doctor_id", 20], ["patient_id", 26], ["city_id", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-04-13 00:00:00"], ["created_at", "2019-01-31 21:38:37.804879"], ["updated_at", "2019-01-31 21:38:37.804879"], ["doctor_id", 30], ["patient_id", 26], ["city_id", 3]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.2ms)[0m  [1m[34mSELECT "doctors".* FROM "doctors"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mDoctor Load (0.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id", "city_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-12-15 00:00:00"], ["created_at", "2019-01-31 21:38:37.816508"], ["updated_at", "2019-01-31 21:38:37.816508"], ["doctor_id", 10], ["patient_id", 29], ["city_id", 2]]
+  ↳ db/seeds.rb:22
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
